@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.cuerpo-texto{
+    font-size: 12px;
+}
+
+
+.header{
+    width: 100%;
+    background-color: #EAC926;
+}
+
+.logo-y-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.img-header{
+    width: 30%;
+}
+
+.buscador{
+    width: 45vw;
+    border-radius: 4px;
+    padding: 1vh 1vw;
+    border: none;
+}
+
+.menu{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.icono-menu{
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #0749ac;
+    color: white;
+    margin-top: 3px;
+}
+
+.texto-header{
+    font-size: 12px;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+
+.banner{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+
+.main{
+    width: 90vw;
+    margin: 0 5%;
+}
+
+.articulo{
+    margin: 10px 0;
+}
+
+.img-articulo{
+    width: 100%;
+    height: 85%;
+}
+
+.icono-y-datos-articulo{
+    margin-top: -32px;
+}
+
+.datos-articulo{
+    background-color: white;
+    padding: 15px;
+    border: 0 solid white;
+    border-radius: 0 0 5px 5px;
+}
+
+.titulares{
+    font-size: 24px;
+    color: #747171;
+    text-align: start;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #10d110;
+}
+
+.descripcion{
+    font-size: 16px;
+    color: #888484;
+}
+
+.icon-articulo{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #10d110;
+    background-color: #FFF;
+    border: 1.5px solid #10d110;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 12px;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: white;
+}
+
+.division-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secciones-footer{
+    text-align: center;
+    width: 60vw;
+    padding: 15px 0 10px;
+}
+
+.iconos-footer{
+    color: #1259c3;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 599px) {
+    .boton-header{
+        display: none;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    .login-bar{
+        display: none;
+    }
+
+    .descripcion{
+        display: none;
+    }
+
+    .snk{
+        height: 324px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    .boton-header{
+        display: none;
+    }
+    
+    .menu{
+        margin-top: 5px;
+    }
+
+    .icono-menu{
+        padding: 1.5vw 2vw;
+        font-size: 4vw;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .login-bar{
+        display: none;
+    }
+
+    .descripcion{
+        display: none;
+    }
+    
+    .main{
+        margin: 15px 5%;
+    }
+
+    #ultima-visita{
+        margin-top: 10px;
+    }
+
+    .seccion1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .seccion1 .articulo{
+        box-shadow : 0px 0px 20px rgb( 100 , 100 , 100 );
+        width: 20%;
+    }
+
+    #ofertas{
+        margin: 50px 0;
+    }
+
+    .seccion2{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .seccion2 .articulo{
+        box-shadow : 0px 0px 20px rgb( 100 , 100 , 100 );
+        width: 20%;
+    }
+
+    .precio{
+        display: inline-block;
+    }
+
+/*
+    .seccion1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .seccion2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .primero{
+        order: 1;
+        align-self: flex-start;
+        flex-grow: 1;
+    }
+
+    .segundo{
+        order: 2;
+        align-self: flex-start;
+        flex-grow: 1;
+    }
+
+    .tercero{
+        order: 3;
+        justify-self: flex-end;
+        align-self: flex-start;
+        flex-grow: 1;
+    }
+
+    .cuarto{
+        order: 4;
+        justify-self: flex-end;
+        align-self: flex-end;
+        flex-grow: 1;
+    }
+*/
+
+    .division-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px 0 15px;
+    }
+
+    .secciones-footer{
+        width: 20%;
+    }
+}
+
+
+@media (min-width: 1025px) { 
+    .logo-y-search-bar{
+        padding-top: 2.5vh;
+        padding-bottom: 2vh;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .descuento{
+        display: inline-block;
+    }
+
+    .buscador{
+        padding: 15px 0;
+        border-radius: 4px 0 0 4px;
+        margin-left: 15vw;
+    }
+
+    .buscador::placeholder{
+        font-size: 16px;
+        padding-left: 6px;
+    }
+
+    .boton-header{
+        width: 33px;
+        height: 45px;
+        background-color: white;
+        border: 0px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .texto-header{
+        display: none;
+    }
+
+    .lista-header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2vh;
+    }
+
+    .navbar{
+        list-style-type: none;
+        width: 35vw;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2vw;
+    }
+
+    .redirecciones{
+        text-decoration: none;
+        color: #1f1f20;
+        text-decoration-style: solid;
+    }
+
+    .login-bar{
+        list-style-type: none;
+        width: 35vw;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 1vw;
+    }
+
+    .banner{
+        height: 33vh;
+    }
+
+    #ultima-visita{
+        margin-top: 10px;
+    }
+
+    .seccion1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .seccion1 .articulo{
+        box-shadow : 0px 0px 20px rgb( 100 , 100 , 100 );
+        width: 20%;
+    }
+
+    #ofertas{
+        margin: 50px 0;
+    }
+
+    .seccion2{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .seccion2 .articulo{
+        box-shadow : 0px 0px 20px rgb( 100 , 100 , 100 );
+        width: 20%;
+    }
+
+    .precio{
+        display: inline-block;
+    }
+
+    .division-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px 0 15px;
+    }
+
+    .secciones-footer{
+        width: 20%;
+    }
+}
